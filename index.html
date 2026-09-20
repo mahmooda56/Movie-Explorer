@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>🎬 Movie Explorer</h2>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Genres</a>
+            <a href="#" onclick="showFavourites()">Favourites ❤️</a>
+        </div>
+    </nav>
+
+    <h1>Discover Your Next Favourite Movie</h1>
+
+    <p>Explore movies, genres and more!</p>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search for a movie...">
+        <button>🔍 Search</button>
+    </div>
+
+    
+
+    <h2 class="section-title">Popular Movies</h2>
+
+    <div class="movie-container">
+
+        <div class="movie-card">
+              <div class="movie-poster">🎬</div>
+              <h3>Movie One</h3>
+              <p>⭐ 8.5</p>
+              <button class="details-btn" onclick="showDetails('Movie One','8.5')">View Details</button>
+        </div>
+
+        <div class="movie-card">
+             <div class="movie-poster">🎬</div>
+             <h3>Movie Two</h3>
+             <p>⭐ 8.2</p>
+             <button class="details-btn" onclick="showDetails('Movie Two','8.2')">View Details</button>
+        </div>
+        <div class="movie-card">
+             <div class="movie-poster">🎬</div>
+             <h3>Movie Three</h3>
+             <p>⭐ 9.0</p>
+             <button class="details-btn" onclick="showDetails('Movie Three','9.0')">View Details</button>
+
+        </div>
+
+    </div>
+    <div id="movie-details"></div>
+
+    <script src="script.js"></script>
+
+</body>

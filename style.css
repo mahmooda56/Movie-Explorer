@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #222;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+.search-box {
+    margin-top: 30px;
+}
+
+.search-box input {
+    width: 400px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-box button {
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.section-title {
+    margin-top: 50px;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.movie-card {
+    width: 180px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.movie-poster {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    background-color: #333;
+    border-radius: 8px;
+}
+.details-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#movie-details {
+    margin: 40px auto;
+    padding: 25px;
+    max-width: 600px;
+    background-color: #222;
+    border-radius: 10px;
+    text-align: center;
+}
+#movie-details img {
+    max-width: 250px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+#movie-details h2 {
+    margin-bottom: 10px;
+}
+
+#movie-details p {
+    font-size: 17px;
+    margin: 8px;
+}
+.horror-theme {
+    background-color: #180808;
+    color: #ffdddd;
+    font-family: Georgia, serif;
+}
+
+.horror-theme nav {
+    background-color: #080000;
+}
+
+.horror-theme .movie-card,
+.horror-theme #movie-details {
+    background-color: #260909;
+}
+
+.horror-theme h1,
+.horror-theme h2,
+.horror-theme h3 {
+    color: #ff4444;
+}
+.action-theme {
+    background-color: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.action-theme nav {
+    background-color: #000000;
+}
+
+.action-theme .movie-card,
+.action-theme #movie-details {
+    background-color: #1f1f1f;
+}
+
+.action-theme h1,
+.action-theme h2,
+.action-theme h3 {
+    color: #ff9900;
+}
+.horror-action-theme {
+    background-color: #120808;
+    color: #ffdddd;
+    font-family: Georgia, serif;
+}
+
+.horror-action-theme nav {
+    background-color: #050505;
+}
+
+.horror-action-theme .movie-card,
+.horror-action-theme #movie-details {
+    background-color: #241010;
+}
+
+.horror-action-theme h1,
+.horror-action-theme h2,
+.horror-action-theme h3 {
+    color: #ff6a00;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .search-box input {
+        width: 80%;
+    }
+
+    .movie-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-card {
+        width: 70%;
+    }
+    .search-box button {
+        margin-top: 10px;
+        width: 85%;
+    }
+
+    #movie-details {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #movie-details img {
+        max-width: 80%;
+        height: auto;
+    }
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+    .movie-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+.movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+  }
+    button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  .movie-card h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.movie-card p {
+    margin: 8px 0;
+}
+}
